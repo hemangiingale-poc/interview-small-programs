@@ -23,10 +23,24 @@ public class InterviewNumberSeries {
 		// InterviewNumberSeries.checkNumberIsArmstrongOrNot(370);
 		// InterviewNumberSeries.swappingNumbersWithoutUsingThirdVariable(12,65);
 		// InterviewNumberSeries.swappingNumbersUsingThirdVariable(12, 65);
-		InterviewNumberSeries.findLargestNumber();
-		
+		// InterviewNumberSeries.findLargestNumber();
+		// InterviewNumberSeries.factorialOfNumber(5);
+		int[] numberArray = { 23, 45, 67, 89, 38, 99 };
+		InterviewNumberSeries.findSmallestNumber(numberArray);
+		InterviewNumberSeries.findLargestNumberIntoArray(numberArray);
+
 	}
 
+//======================================factorial of number==========================================//
+
+	private static void factorialOfNumber(int inputNumber) {
+		int factorial = 1;
+		for (int i = 1; i <= inputNumber; i++) {
+			factorial = factorial * i;
+		}
+		System.out.println("FActorial of a givin number is " + factorial);
+
+	}
 //=======================================Fibonancci Series==========================================//
 
 	// fibinancii series using for loop
@@ -177,6 +191,26 @@ public class InterviewNumberSeries {
 		}
 		System.out.println("Largest number in the array is : " + largestNumber);
 	}
-	
-	
+
+	private static void findLargestNumberIntoArray(int[] numberArray) {
+		int largestNumber = numberArray[0];
+		for (int i = 0; i < numberArray.length; i++) {
+			if (numberArray[i] > largestNumber) {
+				largestNumber = numberArray[i];
+			}
+		}
+		System.out.println("Largest number in the array is : " + largestNumber);
+	}
+
+//=======================================Smallest number==============================================//
+	private static void findSmallestNumber(int[] numberArray) {
+		int smallestNumber = numberArray[0];
+		for (int i = 0; i < numberArray.length; i++) {
+			if (numberArray[i] < smallestNumber) {
+				smallestNumber = numberArray[i];
+			}
+		}
+		System.out.println("smallest number in the array is : " + smallestNumber);
+	}
+
 }
