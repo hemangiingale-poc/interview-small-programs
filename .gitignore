@@ -25,4 +25,4 @@ hs_err_pid*
 .classpath
 .project
 .settings
-src/org/interview/poc/InterviewNumberSeries.java
+.idea/workspace.xml
