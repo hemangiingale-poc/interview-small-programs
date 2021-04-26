@@ -27,3 +27,7 @@ hs_err_pid*
 .settings
 .idea/workspace.xml
 src/org/interview/poc/TestPracticePrograms.java
+src/org/interview/poc/InterviewPatternPrograms.java
+.idea/interview-small-programs.iml
+.idea/modules.xml
+.idea/vcs.xml
