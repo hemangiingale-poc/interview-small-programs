@@ -1,4 +1,4 @@
-package org.interview.poc;
+package org.interview.poc.thread;
 
 import java.util.ArrayList;
 
